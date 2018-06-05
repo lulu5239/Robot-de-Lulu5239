@@ -31,10 +31,10 @@ client.on("warn", (e) => console.warn("\n\n"+e));
 
 client.on('ready', () => {
   console.log("Prêt !");
-  if(chose_changés.nom.ok){process.user.setUsername(chose_changés.nom.nouveau)}
-  if(chose_changés.jeu.ok){process.user.setActivity(chose_changés.jeu.nouveau, "type:PLAYING")}
-  if(chose_changés.status.ok){process.user.setStatus(chose_changés.status.nouveau)}
-  if(chose_changés.logo.ok){process.user.setAvatar(chose_changés.logo.nouveau)}
+  //if(chose_changés.nom.ok){process.user.setUsername(chose_changés.nom.nouveau)}
+  //if(chose_changés.jeu.ok){process.user.setActivity(chose_changés.jeu.nouveau, "type:PLAYING")}
+  //if(chose_changés.status.ok){process.user.setStatus(chose_changés.status.nouveau)}
+  //if(chose_changés.logo.ok){process.user.setAvatar(chose_changés.logo.nouveau)}
 });
 
 client.on("message", msg => {
