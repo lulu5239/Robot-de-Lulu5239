@@ -22,7 +22,7 @@ var chose_changés = {
 	}
 }
 
-var ok = ["367645967694036994"]
+var ok = ["367645967694036994", "445157515802443778"]
 
 var prefixe = "rp:"
 
@@ -405,6 +405,43 @@ client.on("message", msg => {
 		msg.delete()
 	}
 	if(msg.channel.id=="440397016296849409" && msg.content.startsWith("!m1-lvl8")){
+		msg.channel.send({embed:{
+			title: "RP",
+			description: msg.author+" Quel arbre a encore un feuillage vert en hiver ?\n:one: Le pin\n:two: Le marronnier\n:three: L’orme",
+			color: 255,
+			footer: {
+				text: "Robot programmé par Lulu5239#8623."
+			},
+			fields: [{
+				name: "Fonction :",
+				value: "`!rep-<VOTRE REPONSE>`"
+			}]
+		}})
+		msg.delete()
+	}
+	if(msg.channel.id=="440397016296849409" && msg.content.startsWith("!rep-1")){
+		msg.channel.send({embed:{
+			title: "RP",
+			description: msg.author+" Gagné !",
+			color: 255*255,
+			footer: {
+				text: "Robot programmé par Lulu5239#8623."
+			}
+		}})
+		msg.delete()
+	}
+	if(msg.channel.id=="440397016296849409" && (msg.content.startsWith("!rep-2")||msg.content.startsWith("!rep-3"))){
+		msg.channel.send({embed:{
+			title: "RP",
+			description: msg.author+" Perdu.",
+			color: 0,
+			footer: {
+				text: "Robot programmé par Lulu5239#8623."
+			}
+		}})
+		msg.delete()
+	}
+	if(msg.channel.id=="440397071326117899" && msg.content.startsWith("!m1-lvl9")){
 		msg.channel.send({embed:{
 			title: "RP",
 			description: msg.author+" Le niveau n'est pas encore créé. :cry:",
