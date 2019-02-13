@@ -14,11 +14,11 @@ var chose_changés = {
 	},
 	status: {
 		ok: true,
-		nouveau: "idle",
+		nouveau: "dnd",
 	},
 	jeu: {
 		ok: true,
-		nouveau: "être hébergé par Lulu5239."
+		nouveau: "ne plus fonctionner."
 	}
 }
 
@@ -130,7 +130,7 @@ client.on("message", msg => {
 })
 
 client.on("message", msg => {
-	if(msg.channel.id=="440214431838765060"&&msg.author.bot==false){
+	/*if(msg.channel.id=="440214431838765060"&&msg.author.bot==false){
 		msg.channel.send({embed:{
 			title: "RP",
 			description: "Vous devez écrire `!aventure` pour commencer le jeu.",
@@ -452,6 +452,8 @@ client.on("message", msg => {
 		}})
 		msg.delete()
 	}
+	*/
+	if(msg.author.bot==false) msg.channel.send("Suite à un désaccord avec The Ultimate Ksk, DeadRP est dead.")
 	
 })
 
